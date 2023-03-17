@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*background image*/
+body{
+    background-image: url(background.jpg.webp);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+/* menu design */
+.menu{
+    background: rgb(38, 127, 235);
+    text-align: center;
+}
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color:rgb(49, 49, 131)
+}
+.menu ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color:azure
+}
+.active, .menu ul li:hover{
+    background: rgba(20, 160, 241, 0.733);
+    border-radius: 3px;
+}
+.menu .fa{
+    margin-right:8px;
+}
+.sub-menu-1{
+    display: none;
+}
+/* modify the layout of the dorpdown menu */
+.menu ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(38, 127, 235);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius:0;
+    text-align: left;
+}
+/* when you move the cursor on the item, it's chang color */
+.menu ul li:hover .sub-menu-1 ul li a:hover{
+    color:rgb(125, 250, 118)
+}
+/* title and buttons in the centre of website */
+.title{
+    position: absolute;
+    top:37%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1{
+    color:aliceblue;
+    font-size: 70px;
+}
+.button{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid aliceblue;
+    padding: 5px 25px;
+    color: aliceblue;
+    transition: 0.5 ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: aliceblue;
+    color:black;
+}
